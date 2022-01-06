@@ -1,0 +1,84 @@
+@font-size: 16;
+@rem: @font-size*1rem;
+
+@color-main: #0062a0;
+@color-dark: #494949;
+@color-text: #2c3e50;
+
+@burger-height: 36px;
+
+@mobile-width: 320px;
+@tablet-small-width: 720px;
+@tablet-width: 800px;
+@desktop-small-width: 1024px;
+@desktop-width: 1280px;
+
+@body-max-width: @desktop-width;
+
+.section-margin-sides {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .OnDesktop({
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: @body-max-width;
+    width: 100%;
+  });
+}
+
+.intro-image-template {
+  margin-bottom: 20px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.OnlyOnMobile (@rules) {
+  @media screen and (max-width: (@tablet-small-width)-1px) {
+    @rules();
+  }
+}
+
+.OnTabletSmall(@rules) {
+  @media screen and (min-width: @tablet-small-width) {
+    @rules();
+  }
+}
+
+.OnlyOnTabletSmall(@rules) {
+  @media screen and (min-width: @tablet-small-width) and (max-width: (@tablet-width)-1px) {
+    @rules();
+  }
+}
+
+.OnTablet(@rules) {
+  @media screen and (min-width: @tablet-width) {
+    @rules();
+  }
+}
+
+.OnlyOnTablet(@rules) {
+  @media screen and (min-width: @tablet-width) and (max-width: (@desktop-small-width)-1px) {
+    @rules();
+  }
+}
+
+.OnDesktopSmall(@rules) {
+  @media screen and (min-width: @desktop-small-width) {
+    @rules();
+  }
+}
+
+.OnlyOnDesktopSmall(@rules) {
+  @media screen and (min-width: @desktop-small-width) and (max-width: (@desktop-width)-1px) {
+    @rules();
+  }
+}
+
+.OnDesktop(@rules) {
+  @media screen and (min-width: @desktop-width) {
+    @rules();
+  }
+}

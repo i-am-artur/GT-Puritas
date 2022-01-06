@@ -1,0 +1,30 @@
+{
+  "title": "O NAS",
+  "intro": "Firma GT Puritas proponuje pełne spektrum usług z projektowania obiektów dostarczania energii na wszystkich etapach życiowego cyklu.",
+  "one": "Jesteśmy oficjalnym przedstawicielem ChI Energoprojekt w Unii Europejskiej. ChI Energoprojekt S.A. jest założona w 1932 roku, ma znaczne doświadczenie kompleksowego projektowania obiektów energetyki:",
+  "facilities": [
+    "Elektrowni atomowe",
+    "Elektrowni cieplne",
+    "Elektroni gazoturbinowe",
+    "Urządzenia parogazowe",
+    "Elektrowni wodne",
+    "Elektrowni słoneczne"
+  ],
+  "two": "Naszym partnerem są urzeczywistnione w projektach 88 cieplnych i 8 atomowych elektrowni ogólną ustaloną potęgą 52 mln kW. Jesteśmy gotowe wystąpić odpowiedzalnym partnerem, kooperantem w projektowaniu nowych, rekonstrukcji i modernizacji obiektów energetycznych.",
+  "three" : "Spodziewamy się, że nasza oferta zainteresuje Państwo, i potrafimy nawiązać obopólnie korzystną współpracę.",
+  "four": "Również możemy wykonywać oddzielne rozdziały projektów:",
+  "five" : {
+    "title":"Rozdział ciepłomechaniczny:",
+    "content" : "opracowanie dokumentacji projektowej ciepłomechanicznej części na wszystkich stadiach projektowania reaktorów, hal maszynowych, bloków specjalnych i pomocniczych budowl i budów (w tej liczbie budowle hydrotechniczne) AES i ТES; zachowanie odpadów promieniotwórczych."
+  },
+  "six" : "",
+  "seven" : "Rozdział elektrotechniczny: opracowanie dokumentacji projektowej dotyczącej elektrotechnicznej części obiektów energetyki w objętości rozdziałów:",
+  "sevenList" : [
+    "zasilanie energią elektryczną od 0,4 kW do 750 kW",
+    "przekaźnikowa obrona i automatyka",
+    "pożarna sygnalizacja"
+  ],
+  "eight" : "Rozdział automatyzowanych systemów zarządzania: opracowanie dokumentacji projektowej dotyczącej automatyzowanych systemów zarządzania procesami technologicznymi na AES i ТES, radiacyjna kontrola.",
+  "nine" : "Rozdział sanitarno-techniczny: opracowanie dokumentacji projektowej dotyczącej wodociągu i kanalizacji, ogrzewania, wentyłacji i klimatyzowania pomieszczeni budowl i budów AES i ТES;",
+  "ten" : "Rozdział projektów organizacji budownictwa: opracowanie projektów organizacji budownictwa, generalnych planów, sporządzanie dokumentacji kosztorysowej."
+}

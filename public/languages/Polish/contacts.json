@@ -1,0 +1,27 @@
+{
+  "title": "KONTAKT",
+  "companyName": "GT Puritas",
+  "messengersImage": "messengers.jpg",
+  "phone": "+380 98 569 3051",
+  "email": {
+    "text": "email",
+    "address": "gtpuritas@gmail.com"
+  },
+  "partners" : {
+    "text": "PARTNERS",
+    "list": [
+      [ "solarkorea.png",
+        "http://solarkor.com/",
+        "Oficjalny dystrybutor HYUNDAI GREEN ENERGY"
+      ],
+      [ "kotel-prom.png",
+        "http://kotel-prom.com/",
+        "Doświadczony zespół specjalistów w zakresie sprzedaży, instalacji i konserwacji urządzeń grzewczych"
+      ],
+      [ "kotel-prom-com.png",
+        "http://kotel-prom.com.ua/",
+        "Sprzedaż i serwis pieców na paliwo stałe i innych urządzeń"
+      ]
+    ]
+  }
+}

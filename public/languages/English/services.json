@@ -1,0 +1,48 @@
+{
+  "title": "SERVICES",
+  "WorkPerformed" : {
+    "heading": "According to your requirements and technical specifications, we can carry out the following design work:",
+    "list": [
+      "Development of project documentation for the auxiliary equipment of HPPs and PSPs (oil economy, pneumatic economy, drainage system of the flowing part of the hydroturbine, drainage system, technical water supply system), performing hydraulic calculations;",
+      "Development of design documentation for mechanical equipment (flat closures, wheel locks, guard gratings, pick-ups, equipment of the repairment site, crane test equipment, gantry cranes, bridge cranes), calculation of metal structures;",
+      "Development of hydraulic power equipment (design of units and parts of hydraulic turbines).",
+      "Conducting an inspection of the quality of fabrication of metal structures at the fabrication factory, as well as checking the completeness of the package of factory executive documentation.",
+      "Development of a program to ensure product quality at all stages, from design work to maintenance of the equipment.",
+      "Development of programs for the installation of hydromechanical equipment.",
+      "Development of programs for the organization and provision of environmental control.",
+      "Development of working documentation, in accordance with the European standards and rules (execution of detailed drawings, as well as sweeps) on the basis of provided assembly drawings from factories taking into account production capacities and existing machine stock."
+    ]
+  },
+  "WorkCanPerfom" : {
+    "heading" : "Additionally, the following works can be performed:",
+    "list" : [
+      "Quality assurance control;",
+      "Author’s supervision;",
+      "Development of design documentation for auxiliary structures of nuclear power plants and thermal power plants, including hydraulic structures;",
+      "Development of design documentation for the architectural and construction part of buildings and facilities of power plants (railways electric system, etc.);",
+      "Development of design documentation for water supply and sanitation of auxiliary buildings and structures;",
+      "Development of construction projects."
+    ]
+  },
+  "NormativeDocuments" : {
+    "heading": "In the process of performing the work, the following international normative documents were applied:",
+    "QA": {
+      "heading": "Quality assurance:",
+      "list": [
+        "ISO 9000-1 General quality management and quality assurance standards. Part 1. Guidelines for selection and application;",
+        "ISO 9000-2: General quality management and quality assurance standards. Part 2. General guidelines for the application of ISO 9001, ISO 9002 and ISO 9003;",
+        "ISO 10013 Guidelines for the development of manuals for quality;",
+        "ISO 9001 System of quality (quality management system);",
+        "ISO 8402 Quality management and quality assurance. (dictionary)."
+      ]
+    },
+    "construction" : {
+      "heading" : "Construction:",
+      "list" : [
+        "ISO 6240 Standards for performance in construction;",
+        "ISO 3443 Construction of buildings. Tolerances in construction.",
+        "ISO 7077 Measurement methods in construction. General principles and methods for controlling the correspondence of sizes."
+      ]
+    }
+  }
+}

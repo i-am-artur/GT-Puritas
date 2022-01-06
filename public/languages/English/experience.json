@@ -1,0 +1,75 @@
+{
+  "title": "OUR WORK",
+  "intro": "Among the most powerful stations designed by our partner are:",
+  "thermalPP": {
+    "heading": "Thermal power plants",
+    "image" : "TPP.jpeg",
+    "table": {
+      "heading": [
+        "Name of power plant",
+        "Country",
+        "Capacity, MW"
+      ],
+      "content": [
+        ["Nassiriya TPP Block №4", "Iraq", "200"],
+        ["Southern Baghdad TPP Bl. №3 and №4", "Iraq", "100"],
+        ["Obra TPP Blocks 5х50 MW", "India", "250"],
+        ["Uglegorsk TPP", "Ukraine", "3600"],
+        ["Zaporizhzhya TPP", "Ukraine", "3600"],
+        ["Krivoy Rog TPP-2", "Ukraine", "3000"],
+        ["Pridneprovskaya TPP", "Ukraine", "2400"],
+        ["Zmievskaya TPP", "Ukraine", "2400"],
+        ["Starobeshevskaya TPP", "Ukraine", "2300"],
+        ["Luhansk TPP", "Ukraine", "2300"],
+        ["Slavyansk TPP", "Ukraine", "2100"],
+        ["Kurakhovskaya TPP", "Ukraine", "1670"],
+        ["Zuevskaya TPP-2", "Ukraine", "1200"],
+        ["Kharkiv TPP-5", "Ukraine", "490"]
+      ]
+    }
+  },
+  "nuclearPP": {
+    "heading": "Nuclear power plants",
+    "image" : "NPP.jpeg",
+    "table": {
+      "heading": [
+        "Name of power plant",
+        "Country",
+        "Capacity, MW"
+      ],
+      "content": [
+        ["Kudankulam NPP (Block №1 and No.2, 2x1000 MW)", "India", "2000"],
+        ["Kozloduy NPP Block 5, 6", "Bulgaria", "2000"],
+        ["Zaporizhzhya NPP", "Ukraine", "6000"],
+        ["Kursk NPP", "Russia", "3000"],
+        ["South-Ukrainian NPP", "Ukraine", "3000"],
+        ["Smolensk NPP ", "Russia", "2000"],
+        ["Balakovo NPP Block 1, 2", "Russia", "2000"],
+        ["Rivne NPP", "Ukraine", "1000"],
+        ["Rostov NPP", "Russia", "1000"]
+      ]
+    }
+  },
+  "otherPP": {
+    "heading": "Other power plants",
+    "table": {
+      "content": [
+        [ "Combined cycle gas turbine power plant, 2x151.5 MW",
+          "Alchevsk, Ukraine",
+          "Project design and work draft"
+        ],
+        [ "Diesel power station, 25 MW",
+          "Moscow, Russian",
+          "Project design"
+        ],
+        [ "Hydro power plant \"Pleicrong\" 51 MW",
+          "Vietnam",
+          "Working draft of turbine room"
+        ]
+      ]
+    }
+  }
+}
+
+
+

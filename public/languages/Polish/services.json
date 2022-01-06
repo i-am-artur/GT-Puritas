@@ -1,0 +1,48 @@
+{
+  "title": "USŁUGI",
+  "WorkPerformed": {
+    "heading": "Zgodnie z wymaganiami i specyfikacją techniczną możemy wykonać następujące prace projektowe:",
+    "list": [
+      "Opracowanie dokumentacji projektowej na pomocniczy sprzęt elektrowni wodnej oraz elektrowni wodnej akumulacyjnej (maślane gospodarstwo, pneumatyczne gospodarstwo, system osuszenia bieżącej części turbiny wodnej, system pompowania wód gruntowych, system technicznego zaopatrzenia wody), wykonanie hydraulicznych obrachunków;",
+      "Opracowanie dokumentacji projektowej na sprzęt mechaniczny (stawidła płaskie, stawidła kołowe, kraty na śmiecie, podchwycenie, sprzęt placu naprawczego, sprzęt dla badańa urządzenia dźwignicowego, dźwignice, suwnice pomostowe), wykonanie obrachunków konstrukcji metalowych;",
+      "Opracowanie sprzętu hydroenergetycznego (projektowanie węzłów i detali turbin wodnych).",
+      "Przeprowadzenie inspekcji na zakładzie produkującym w celu sprawdzenia jakości wyrobu konstrukcji metalowych, a także sprawdzenie pakietu fabrycznej dokumentacji wykonawczej, czy ona jest kompletna.",
+      "Opracowanie programu po zabezpieczeniu jakości produkcji na wszystkich etapach, zaczynając od prac projektowych do technicznej obsługi zrobionego sprzętu.",
+      "Opracowanie programów na montaż sprzętu hydromechanicznego.",
+      "Opracowanie programów dotyczącej organizacji i zabezpieczenia kontroli ekologicznej.",
+      "Opracowanie dokumentacji roboczej według Europejskich standardów i reguł (wykonanie dokładnych rysunków technicznych oraz planów) na podstawie nadanych montażowych rysunków technicznych od zakładów z uwzględnieniem produkcyjnych potęg i istniejącego składu maszynowego."
+    ]
+  },
+  "WorkCanPerfom": {
+    "heading": "Dodatkowo mogą być wykonane takie prace:",
+    "list": [
+      "Kontrola zarządzania jakością;",
+      "Autorski nadzór;",
+      "Opracowanie dokumentacji projektowej na budowle pomocnicze elektrowni atomowej oraz elektrowni cieplnej, w tej liczbie budowle hydrotechhydrotechniczne;",
+      "Opracowanie dokumentacji projektowej architektonicznie-budowlanej części budowl i budów obiektów energetycznych (koleje, inne);",
+      "Opracowanie dokumentacji projektowej wodociągu i kanalizacji, pomocniczych budowl i budynków;",
+      "Opracowanie projektów organizacji budownictwa."
+    ]
+  },
+  "NormativeDocuments": {
+    "heading": "W procesie wykonania prac korzystaliśmy z takich międzynarodowych dokumentów normatywnych:",
+    "QA": {
+      "heading": "System jakości:",
+      "list": [
+        "ISO 9000-1 Ogólne zarządzanie jakością i standardy zabezpieczenia jakości. Część 1. Kierownicze instrukcje dot. wyboru i zastosowania;",
+        "ISO 9000-2 Ogólne zarządzanie jakością i standardy zabezpieczenia jakości. Część 2. Ogólne kierownicze instrukcje zastosowania ISO 9001, ISO 9002 oraz ISO 9003;",
+        "ISO 10013 Kierownicze instrukcje opracowania zarządzania jakością;",
+        "ISO 9001 System jakości (system managementu jakości);",
+        "ISO 8402 Zarządzanie jakością oraz zabezpieczenie jakości. (słownik)."
+      ]
+    },
+    "construction": {
+      "heading": "Budownictwo:",
+      "list": [
+        "ISO 6240 Standardów na charakterystyki eksploatacyjne w budownictwie;",
+        "ISO 3443 Budownictwo budowl. Przepustki w budownictwie.",
+        "ISO 7077 Metod wymiaru w budownictwie. Ogólne zasady ramowe i metody kontroli zgodności rozmiarów; inne."
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "title": "NASZE DOŚWIADCZENIE",
+  "intro": "Wśród najpotężniejszych stacji zaprojektowanych przez naszego partnera są:",
+  "thermalPP": {
+    "heading": "Elektrownie termiczne",
+    "image" : "TPP.jpeg",
+    "table": {
+      "heading": [
+        "Nazwa elektrowni",
+        "Kraj",
+        "Moc, MW"
+      ],
+      "content": [
+        ["Nassiria, block number 4", "Irak", "200"],
+        ["Południowy Bagdad, blok nr 3 i nr 4", "Irak", "100"],
+        ["Оbra, 5х50 MW", "Indie", "250"],
+        ["Uglegorsk TPP", "Ukraina", "3600"],
+        ["Zaporizhzhya TPP", "Ukraina", "3600"],
+        ["Krivoy Rog TPP-2", "Ukraina", "3000"],
+        ["Pridneprovskaya TPP", "Ukraina", "2400"],
+        ["Zmievskaya TPP", "Ukraina", "2400"],
+        ["Starobeshevskaya TPP", "Ukraina", "2300"],
+        ["Ługańsk TPP", "Ukraina", "2300"],
+        ["Slavyansk TPP", "Ukraina", "2100"],
+        ["Kurakhovskaya TPP" ,"Ukraina", "1670"],
+        ["Zuevskaya TPP-2", "Ukraina", "1200"],
+        ["Charków TPP-5", "Ukraina", "490"]
+      ]
+    }
+  },
+  "nuclearPP": {
+    "heading": "Elektrowni atomowe",
+    "image" : "NPP.jpeg",
+    "table": {
+      "heading": [
+        "Nazwa elektrowni",
+        "Kraj",
+        "Moc, MW"
+      ],
+      "content": [
+        ["Kudankulam", "Indie", "2000"],
+        ["Kozloduy", "Bułgaria", "2000"],
+        ["Zaporizhzhya NPP", "Ukraina", "6000"],
+        ["Kursk NPP", "Federacja Rosyjska", "3000"],
+        ["Południowo-ukraińska NPP", "Ukraina", "3000"],
+        ["Smoleńsk NPP", "Federacja Rosyjska", "2000"],
+        ["Balakovo NPP, block 1, 2", "Federacja Rosyjska", "2000"],
+        ["Równe NPP", "Ukraina", "1000"],
+        ["Rostów NPP, block 1", "Federacja Rosyjska", "1000"]
+      ]
+    }
+  },
+  "otherPP": {
+    "heading": "Inne",
+    "table": {
+      "heading": [
+      ],
+      "content": [
+        [ "Elektrownia z turbiną gazową z kombinowanym cyklem, 2x151,5 MW",
+          "Alczewsk, Ukraina",
+          "Dokumentacja projektowa i robocza"
+        ],
+        [ "Diesel-elektrownia, 25 MW",
+          "Moskwa, Rosja",
+          "Dokumentacja projektu"
+        ],
+        [ "HPP \"Pleikrung\" Bł. 51 MW",
+          "Wietnam",
+          "Roboczy przeciąg turbiny"
+        ]
+      ]
+    }
+  }
+}
+
+
+

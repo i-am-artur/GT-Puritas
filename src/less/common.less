@@ -1,0 +1,31 @@
+@import (reference) "../less/helpers";
+
+
+main {
+  flex-grow: 1;
+}
+
+@margin-heading-list: 8px;
+.content {
+  &:extend(.section-margin-sides);
+  &__title {
+    font-size: 1.5rem;
+    color: @color-main;
+  }
+
+  &__heading {
+    margin-bottom: @margin-heading-list;
+  }
+
+  &__paragraph {
+    margin: 0;
+  }
+
+  &__list {
+    margin-top: @margin-heading-list;
+
+    &_wide {
+      padding-left: 20px;
+    }
+  }
+}
