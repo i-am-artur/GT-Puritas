@@ -1,18 +1,3 @@
-// import { useRouter, useRoute } from "vue-router";
-// export currentLanguage = ref('English');
-
-// export function getCurrentLanguage(){
-//   return this.$store.state.currentLanguage;
-// }
-//
-// export async function loadData(language, fileName) {
-//   this.content = null;
-//   const response = await fetch(
-//     `./languages/${language.toLowerCase()}/${fileName}`
-//   );
-//   this.content = await response.json();
-// }
-
 import { ref } from "vue";
 import { computed } from "vue";
 import { watch } from "vue";
