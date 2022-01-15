@@ -29,7 +29,6 @@ export function loadContent(fileName) {
 
   function fetchData() {
     content.value = null;
-    console.log(currentLanguage);
     fetch(`./languages/${currentLanguage.value["long"]}/${fileName}`)
       .then((response) => response.json())
       .then((data) => (content.value = data));
@@ -46,5 +45,15 @@ export function getLanguagesList() {
     en: { short: "en", long: "English" },
     ru: { short: "ru", long: "Russian" },
     pl: { short: "pl", long: "Polish" },
+  };
+}
+
+export function getLinks() {
+  return {
+    home: "/",
+    services: "/services",
+    experience: "/experience",
+    certificates: "/certificates",
+    contacts: "/contacts",
   };
 }

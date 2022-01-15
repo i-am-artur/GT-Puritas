@@ -1,28 +1,29 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { getLinks } from "../mixins/mixins";
 
-const wwwRoot = "/gt";
+const links = getLinks();
 
 const routes = [
   {
-    path: wwwRoot,
+    path: links.home,
     name: "AboutUs",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: wwwRoot + "/services",
+    path: links.services,
     name: "Services",
     component: () =>
       import(/* webpackChunkName: "services" */ "../views/Services.vue"),
   },
   {
-    path: wwwRoot + "/experience",
+    path: links.experience,
     name: "Experience",
     component: () =>
       import(/* webpackChunkName: "experience" */ "../views/Experience.vue"),
   },
   {
-    path: wwwRoot + "/certificates",
+    path: links.certificates,
     name: "Certificates",
     component: () =>
       import(
@@ -30,7 +31,7 @@ const routes = [
       ),
   },
   {
-    path: wwwRoot + "/contacts",
+    path: links.contacts,
     name: "Contacts",
     component: () =>
       import(/* webpackChunkName: "contacts" */ "../views/Contacts.vue"),

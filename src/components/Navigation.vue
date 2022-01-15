@@ -2,27 +2,27 @@
   <nav v-if="content !== null" class="nav" :class="{ nav_display: isShown }">
     <ul class="nav__body">
       <li class="nav__item">
-        <router-link to="/" class="nav__link">{{
+        <router-link :to="links.home" class="nav__link">{{
           content.aboutUs
         }}</router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/services" class="nav__link">{{
+        <router-link :to="links.services" class="nav__link">{{
           content.services
         }}</router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/experience" class="nav__link"
+        <router-link :to="links.experience" class="nav__link"
           >{{ content.experience }}
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/certificates" class="nav__link"
+        <router-link :to="links.certificates" class="nav__link"
           >{{ content.certificates }}
         </router-link>
       </li>
       <li class="nav__item">
-        <router-link to="/contacts" class="nav__link">{{
+        <router-link :to="links.contacts" class="nav__link">{{
           content.contacts
         }}</router-link>
       </li>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { loadContent } from "../mixins/mixins";
+import { getLinks, loadContent } from "../mixins/mixins";
 
 export default {
   name: "Navigation",
@@ -43,8 +43,10 @@ export default {
   },
   setup() {
     let { content } = loadContent("navigation.json");
+    const links = getLinks();
     return {
       content,
+      links,
     };
   },
   created() {
