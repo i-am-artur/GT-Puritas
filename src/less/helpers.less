@@ -28,13 +28,6 @@
   });
 }
 
-.intro-image-template {
-  margin-bottom: 20px;
-  height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .OnlyOnMobile (@rules) {
   @media screen and (max-width: (@tablet-small-width)-1px) {
     @rules();
@@ -42,13 +35,13 @@
 }
 
 .OnTabletSmall(@rules) {
-  @media screen and (min-width: @tablet-small-width) {
+  @media screen and (min-width: (@tablet-small-width)) {
     @rules();
   }
 }
 
 .OnlyOnTabletSmall(@rules) {
-  @media screen and (min-width: @tablet-small-width) and (max-width: (@tablet-width)-1px) {
+  @media screen and (min-width: @tablet-small-width) and (max-width: (@tablet-width)) {
     @rules();
   }
 }

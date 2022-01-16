@@ -1,7 +1,10 @@
 <template>
   <main v-if="content !== null" class="content">
     <h1 class="content__title">{{ content.title }}</h1>
-    <div class="intro-image"></div>
+    <IntroImage
+      :bgImage="require('../assets/electroLines.jpg')"
+      bgPosition="center"
+    />
     <p class="content__paragraph">
       {{ content.intro }}
     </p>
@@ -35,9 +38,10 @@
 <script>
 import { loadContent } from "../mixins/mixins";
 import LoadingSpinner from "../components/LoadingSpinner";
+import IntroImage from "../components/IntroImage";
 
 export default {
-  components: { LoadingSpinner },
+  components: { IntroImage, LoadingSpinner },
   setup() {
     let { content } = loadContent("aboutUs.json");
 
@@ -48,12 +52,6 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @import (reference) "../less/helpers";
-
-.intro-image {
-  &:extend(.intro-image-template);
-  background-image: url("../assets/electroLines.jpg");
-  background-position: center;
-}
 </style>

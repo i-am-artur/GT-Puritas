@@ -3,7 +3,10 @@
     <Logo />
     <div class="header__content">
       <LanguageChooser />
-      <BurgerMenu @burgerMenuClicked="burgerMenuIsClicked" />
+      <BurgerMenu
+        v-if="isBurgerMenuShown"
+        @burgerMenuClicked="burgerMenuIsClicked"
+      ></BurgerMenu>
       <Navigation :displayClickEvent="BurgerMenuClickedEvent" />
     </div>
   </header>
@@ -11,22 +14,37 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from "vue";
 import LanguageChooser from "./LanguageChooser";
-import BurgerMenu from "./BurgerMenu";
 import Navigation from "./Navigation";
 import Logo from "./Logo";
 
 export default {
-  components: { Navigation, LanguageChooser, BurgerMenu, Logo },
+  components: {
+    Navigation,
+    LanguageChooser,
+    Logo,
+    BurgerMenu: defineAsyncComponent(() =>
+      import(/* webpackChunkName: "BurgerMenu" */ "./BurgerMenu")
+    ),
+  },
   data() {
     return {
       BurgerMenuClickedEvent: null,
+      isBurgerMenuShown: false,
     };
   },
   methods: {
     burgerMenuIsClicked(event) {
       this.BurgerMenuClickedEvent = event;
     },
+  },
+  created() {
+    let mqMaxWidth = window.matchMedia("(max-width: 719px)");
+    this.isBurgerMenuShown = mqMaxWidth.matches;
+    mqMaxWidth.onchange = () => {
+      this.isBurgerMenuShown = mqMaxWidth.matches;
+    };
   },
 };
 </script>

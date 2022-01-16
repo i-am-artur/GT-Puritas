@@ -1,7 +1,10 @@
 <template>
   <main v-if="content !== null" class="content">
     <h1 class="content__title">{{ content.title }}</h1>
-    <div class="intro-image"></div>
+    <IntroImage
+      :bgImage="require('../assets/architectDrawings.jpg')"
+      bgPosition="bottom"
+    />
     <h4 class="content__heading">
       {{ content.WorkPerformed.heading }}
     </h4>
@@ -49,9 +52,10 @@
 <script>
 import { loadContent } from "../mixins/mixins";
 import LoadingSpinner from "../components/LoadingSpinner";
+import IntroImage from "../components/IntroImage";
 
 export default {
-  components: { LoadingSpinner },
+  components: { IntroImage, LoadingSpinner },
   setup() {
     let { content } = loadContent("services.json");
 
@@ -64,10 +68,4 @@ export default {
 
 <style lang="less" scoped>
 @import (reference) "../less/helpers";
-
-.intro-image {
-  &:extend(.intro-image-template);
-  background-image: url("../assets/architectDrawings.jpg");
-  background-position: center;
-}
 </style>
