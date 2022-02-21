@@ -1,9 +1,15 @@
 <template>
   <main v-if="content !== null" class="content">
     <h1 class="content__title">{{ content.title }}</h1>
-    <IntroImage
-      :bgImage="require('../assets/architectDrawings.jpg')"
-      bgPosition="bottom"
+    <ImageSrcSet
+      alt="intro image"
+      path="img/"
+      src="architectDrawings.jpg"
+      sizes="(max-width: 719px) 719px, (min-width: 720px) 1280px"
+      :srcset="[
+        { src: 'architectDrawings-719.jpg', intrinsicSize: '719w' },
+        { src: 'architectDrawings.jpg', intrinsicSize: '1280w' },
+      ]"
     />
     <h4 class="content__heading">
       {{ content.WorkPerformed.heading }}
@@ -52,10 +58,9 @@
 <script>
 import { loadContent } from "../mixins/mixins";
 import LoadingSpinner from "../components/LoadingSpinner";
-import IntroImage from "../components/IntroImage";
-
+import ImageSrcSet from "../components/ImageSrcSet";
 export default {
-  components: { IntroImage, LoadingSpinner },
+  components: { LoadingSpinner, ImageSrcSet },
   setup() {
     let { content } = loadContent("services.json");
 

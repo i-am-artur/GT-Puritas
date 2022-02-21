@@ -1,9 +1,15 @@
 <template>
   <main v-if="content !== null" class="content">
     <h1 class="content__title">{{ content.title }}</h1>
-    <IntroImage
-      :bgImage="require('../assets/electroLines.jpg')"
-      bgPosition="center"
+    <ImageSrcSet
+      alt="intro image"
+      path="img/"
+      src="powerPlant-1280.jpg"
+      sizes="(max-width: 719px) 719px, (min-width: 720px) 1280px"
+      :srcset="[
+        { src: 'powerPlant-719.jpg', intrinsicSize: '719w' },
+        { src: 'powerPlant-1280.jpg', intrinsicSize: '1280w' },
+      ]"
     />
     <p class="content__paragraph">
       {{ content.intro }}
@@ -38,10 +44,13 @@
 <script>
 import { loadContent } from "../mixins/mixins";
 import LoadingSpinner from "../components/LoadingSpinner";
-import IntroImage from "../components/IntroImage";
+import ImageSrcSet from "../components/ImageSrcSet";
 
 export default {
-  components: { IntroImage, LoadingSpinner },
+  components: {
+    ImageSrcSet,
+    LoadingSpinner,
+  },
   setup() {
     let { content } = loadContent("aboutUs.json");
 

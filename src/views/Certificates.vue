@@ -1,17 +1,19 @@
 <template>
   <main v-if="content !== null" class="content">
-    <div
+    <section
+      aria-label="modal"
       class="modal"
-      @click="isModalShown = false"
-      :class="{ modal_display: isModalShown }"
       v-if="isModalShown"
+      :class="{ modal_display: isModalShown }"
+      @click="hideModal"
     >
       <img
         class="modal__image"
         :src="require(`../assets/${content.image.full}`)"
         :alt="content.title"
       />
-    </div>
+    </section>
+
     <h1 class="content__title">{{ content.title }}</h1>
     <p>{{ content.intro }}</p>
     <img
@@ -26,56 +28,38 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import { loadContent } from "../mixins/mixins";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 export default {
   components: { LoadingSpinner },
   setup() {
+    let isModalShown = ref(false);
     let { content } = loadContent("certificates.json");
+
+    let showModal = () => {
+      isModalShown.value = true;
+      document.body.style.overflow = "hidden";
+    };
+
+    let hideModal = () => {
+      isModalShown.value = false;
+      document.body.style.overflow = "visible";
+    };
+
     return {
+      isModalShown,
       content,
+      showModal,
+      hideModal,
     };
-  },
-  data() {
-    return {
-      isModalShown: false,
-    };
-  },
-  methods: {
-    showModal() {
-      this.isModalShown = true;
-    },
   },
 };
 </script>
 
 <style lang="less">
 @import (reference) "../less/helpers";
-
-.work-list {
-  width: 100%;
-  border-collapse: collapse;
-
-  &__part {
-    padding: 3px;
-    text-align: left;
-    border: 1px solid #aaa;
-
-    &_center {
-      text-align: center;
-    }
-
-    &_right {
-      text-align: right;
-    }
-  }
-
-  &__header {
-    border: 1px solid #aaa;
-    background-color: #eee;
-  }
-}
 
 .thumb {
   &-certificate {
@@ -90,23 +74,23 @@ export default {
 }
 
 .modal {
-  position: absolute;
-  display: none;
+  position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
 
   &_display {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   &__image {
-    max-height: 90%;
+    max-height: 90vh;
     max-width: 90%;
   }
 }
