@@ -1,4 +1,7 @@
-# vue
+# GT Puritas Corp.
+Developed with Vue 3.
+
+GT Puritas offers full range of project development of all power plants at all stages.
 
 ## Project setup
 ```
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
