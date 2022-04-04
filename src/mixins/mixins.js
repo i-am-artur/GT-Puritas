@@ -12,13 +12,14 @@ export function loadContent(fileName) {
     fetchData();
   });
 
+  fetchData();
+
   function fetchData() {
     content.value = null;
     fetch(`./languages/${currentLanguage.value["long"]}/${fileName}`)
       .then((response) => response.json())
       .then((data) => (content.value = data));
   }
-  fetchData();
 
   return {
     content,
