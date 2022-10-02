@@ -1,6 +1,5 @@
 import { ref } from "vue";
-import { computed } from "vue";
-import { watch } from "vue";
+import { computed, watch } from "vue";
 import { useStore } from "vuex";
 
 export function loadContent(fileName) {
@@ -12,13 +11,16 @@ export function loadContent(fileName) {
     fetchData();
   });
 
+  fetchData();
+
   function fetchData() {
     content.value = null;
-    fetch(`./languages/${currentLanguage.value["long"]}/${fileName}`)
-      .then((response) => response.json())
-      .then((data) => (content.value = data));
+    import(`../languages/${currentLanguage.value["long"]}/${fileName}`).then(
+      (module) => {
+        content.value = module.default;
+      }
+    );
   }
-  fetchData();
 
   return {
     content,

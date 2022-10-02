@@ -44,6 +44,7 @@ export default {
   setup() {
     let { content } = loadContent("navigation.json");
     const links = getLinks();
+
     return {
       content,
       links,
